@@ -19,14 +19,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickSumar(View view) {
         Integer valorNumero = Integer.parseInt(textViewNumber.getText().toString());
-        valorNumero += 1;
+        valorNumero ++;
         textViewNumber.setText(valorNumero.toString());
     }
 
     public void clickRestar(View view) {
         Integer valorNumero = Integer.parseInt(textViewNumber.getText().toString());
         if(valorNumero>0){
-            valorNumero -= 1;
+            valorNumero --;
             textViewNumber.setText(valorNumero.toString());
         }else {
             Toast.makeText(this, "A donde vas? Ya estamos en 0!!!", Toast.LENGTH_LONG).show();
